@@ -1004,6 +1004,8 @@ html {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        transform: scale(.8);
+        border: solid 20px black;
     }
 }
 /* Tablet - 768px */
@@ -1028,6 +1030,16 @@ html {
     #sbs-598 .cs-content {
         width: 45%;
         padding: 0;
+    }
+    #sbs-598 .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform: scale(1);
+        border: none;
     }
 }
 /*-- -------------------------- -->
