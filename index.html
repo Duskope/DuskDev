@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="./images/logo.webp" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Highlights</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Women's Hair Cuts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Contact</a>
+    </div>                                
+</header>
+    <!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-1427">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="hero-cs-topper">DuskDev</span>
+            <h1 class="cs-title">Crafting Digital Identities for Businesses</h1>
+            <p class="cs-text">
+                I'm Noah, the sole operator of DuskDev. This isn't just a web development service; it's a commitment to crafting professional, top-quality websites that elevate your brand, tell your unique story, and drive real results.
+            </p>
+            <div class="cs-button-group">
+                <a href="" class="cs-button-solid cs-button1">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <source media="(min-width: 601px)" srcset="https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <img loading="lazy" decoding="async" src="https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=600" alt="field" width="1920" height="1200" aria-hidden="true">
+    </picture>
+</section>
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-962">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Top-Quality Websites</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a class="cs-item-link" href="">
+                    <h3 class="cs-h3">Custom Web Development</h3>
+                    <p class="cs-item-text">
+                        From the architecture to the user interface, every element is crafted to align with your brand identity and business goals.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-item-link">
+                    <h3 class="cs-h3">Responsive Design</h3>
+                    <p class="cs-item-text">
+                        In a mobile-driven world, a responsive website is crucial. DuskDev ensures that your website looks and functions flawlessly on devices of all sizes.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-item-link">
+                    <h3 class="cs-h3">Search Engine Optimization (SEO)</h3>
+                    <p class="cs-item-text">
+                        I implement proven SEO strategies, including keyword optimization, backlink building, and content creation, to ensure that your website ranks high on search engine results.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/salon2.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/salon2.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/salon2.jpg" alt="salon" width="842" height="643">
+    </picture>
+</section>
+                                
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-598">
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <img media="maxwidth=600px" src="./images/smile.png" alt="">>
+        <!--Tablet and above Image-->
+        <img media="maxwidth=600px" src="./images/smile.png" alt="">>
+        <img media="maxwidth=600px" src="./images/smile.png" alt="">>
+    </picture>
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">The Goal</h2>
+            <p class="cs-text">
+                The goal is to blend creativity with functionality, crafting digital experiences that leave a lasting impression. I don't just build websites; I sculpt online identities that reflect your brand ethos and resonate with your audience. From the first glimmer of an idea to the final execution, we're here to transform your vision into a digital masterpiece.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--                 Why Choose                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-891">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Specialties</span>
+            <h2 class="cs-title">Why Choose DuskDev?</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fballs1.svg" loading="lazy" decoding="async" alt="icon" width="48" height="48" aria-hidden="true">
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Personalized Approach</h3>
+                    <p class="cs-item-text">
+                        As a solo operator, I offer a level of personalized service that larger agencies often struggle to match. Your business is unique, and your website should reflect that. I take the time to understand your brand, your goals, and your target audience, ensuring that the final product is not just a website but an extension of your business identity.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fballs2.svg" loading="lazy" decoding="async" alt="icon" width="48" height="48" aria-hidden="true">
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">SEO Optimization</h3>
+                    <p class="cs-item-text">
+                        Small businesses often struggle with online visibility. That's where DuskDev excels. Every website I build is optimized for search engines, incorporating the latest SEO best practices. From keyword optimization to strategic content creation, my goal is to ensure that your website ranks high on search engine results, attracting organic traffic and potential customers.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fballs3.svg" loading="lazy" decoding="async" alt="icon" width="48" height="48" aria-hidden="true">
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Timely Project Delivery</h3>
+                    <p class="cs-item-text">
+                        Your time is valuable, and I understand the urgency of establishing your online presence. DuskDev is committed to delivering projects on time without compromising quality. Efficient project management and a streamlined development process ensure that your website is launched promptly, allowing you to start making an impact in the digital landscape.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fballs4.svg" loading="lazy" decoding="async" alt="icon" width="48" height="48" aria-hidden="true">
+                <!-- Text Grouped For Flexbox-->
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Maintanence and Support</h3>
+                    <p class="cs-item-text">
+                        Your website's journey doesn't end with its launch. DuskDev provides ongoing maintenance and support services to ensure that your website remains secure, up-to-date, and performs optimally. Regular updates and troubleshooting are part of the comprehensive support services I offer.
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">Contact</a>
+        <!--Floating Arrow Graphic-->
+        <img class="cs-floater" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Forange-arrow.svg" alt="arrow" loading="lazy" decoding="async" aria-hidden="true">
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
+
+<section id="footer-1390">
+    <div class="cs-container">
+        <div class="cs-top">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" loading="lazy" decoding="async" src="./images/logo.webp" alt="logo" width="209" height="40">
+            </a>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a href="" class="cs-link">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">About</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Services</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Blog</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-bottom">
+            <span class="cs-copyright">
+                © Copyright 2023 - <a href="" class="cs-copyright-link">DuskDev</a>
+            </span>
+            <div class="cs-flex">
+                <a href="" class="cs-copyright-link">Privacy Policy</a>
+                <span class="cs-separater">|</span>
+                <a href="" class="cs-copyright-link">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</section>
+                                                                                                                       
+</body>
+<script src="./index.js"></script>
+</html>
