@@ -58,6 +58,9 @@ body {
     margin: 0;
     color: white;
 }
+#mobile-contact {
+    display: none;
+}
 
 /*-- -------------------------- -->
 <---     Mobile Navigation      -->
@@ -75,6 +78,9 @@ html {
     body.cs-open {
         overflow: hidden;
     }
+    #mobile-contact {
+        display: block;
+    } 
     #cs-navigation {
         width: 100%;
         padding: 0.75rem 1rem;
