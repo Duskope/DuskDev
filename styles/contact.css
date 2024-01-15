@@ -825,7 +825,7 @@ body.dark-mode .cs-button-solid:before {
         height: 3.5rem;
         padding: 0;
         padding-left: 1.5rem;
-        color: var(--bodyTextColorWhite);
+        color: black;
         background-color: #fff;
         border: none;
         /* prevents padding from adding to height and width */
@@ -930,7 +930,7 @@ body.dark-mode .cs-button-solid:before {
         align-items: center;
     }
     #ContactStrip-721 .cs-item:hover .cs-picture {
-        background-color: #f65e2f;
+        background-color: #ff4057;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         transform: scale(1.1);
     }
