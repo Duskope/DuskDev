@@ -1,9 +1,9 @@
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #f65e2f;
-    --primaryLight: #f65e2f;
-    --secondary: #f65e2f;
-    --secondaryLight: #f65e2f;
+    --primary: #ff4057;
+    --primaryLight: #ff4057;
+    --secondary: #ff4057;
+    --secondaryLight: #ff4057;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -928,6 +928,10 @@ html {
 @media only screen and (min-width: 0rem) {
     #sbs-598 {
         position: relative;
+        background-color: #1a1a1a;
+    }
+    .cs-title {
+        color: #fff;
     }
     #sbs-598 .cs-container {
         width: 100%;
@@ -952,65 +956,15 @@ html {
         flex-direction: column;
         /* centers content horizontally, set to flex-start to left align */
         align-items: flex-start;
+        
     }
 
     #sbs-598 .cs-text {
         margin-bottom: 1rem;
+        color: #fff;
     }
     #sbs-598 .cs-text:last-of-type {
         margin-bottom: 2rem;
-    }
-    #sbs-598 .cs-button-solid {
-        font-size: 1rem;
-        /* 46px - 56px */
-        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-        text-decoration: none;
-        font-weight: 700;
-        text-align: center;
-        margin: 0;
-        color: #fff;
-        min-width: 9.375rem;
-        padding: 0 1.5rem;
-        background-color: var(--primary);
-        border-radius: 0.25rem;
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        /* prevents padding from adding to the width */
-        box-sizing: border-box;
-    }
-    #sbs-598 .cs-button-solid:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 0%;
-        background: #000;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        border-radius: 0.25rem;
-        transition: width 0.3s;
-    }
-    #sbs-598 .cs-button-solid:hover:before {
-        width: 100%;
-    }
-    #sbs-598 .cs-background {
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 16rem;
-        z-index: 1;
-    }
-    #sbs-598 .cs-background img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        transform: scale(.8);
-        border: solid 20px black;
     }
 }
 /* Tablet - 768px */
@@ -1022,29 +976,12 @@ html {
     }
     #sbs-598 .cs-container {
         flex-direction: row;
-        justify-content: flex-end;
-    }
-    #sbs-598 .cs-background {
-        width: 50%;
-        height: auto;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 50%;
+        justify-content: flex-start;
+        margin: 2rem;
     }
     #sbs-598 .cs-content {
         width: 45%;
         padding: 0;
-    }
-    #sbs-598 .cs-background img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        transform: scale(1);
-        border: none;
     }
 }
 /*-- -------------------------- -->
