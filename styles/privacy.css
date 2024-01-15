@@ -1107,6 +1107,7 @@ body.dark-mode .cs-button-solid:before {
         max-width: 42.125rem;
         /* prevents flexbox from squishing it */
         flex: none;
+        text-align: center;
     }
     #content-page-1401 .cs-image-group {
         width: 44%;
