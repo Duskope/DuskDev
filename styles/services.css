@@ -921,6 +921,7 @@ body.dark-mode .cs-button-solid:before {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        border-radius: 2rem;
     }
     #RTsbs-1311 .cs-box,
     #RTsbsr-1311 .cs-box,
