@@ -680,6 +680,7 @@ body.dark-mode .cs-button-solid:before {
         padding: clamp(10.9375rem, 10vw, 12.5rem) 1rem 6.25rem;
         position: relative;
         z-index: 1;
+        background-color: #ff4057
     }
     #ContactBanner-721 .cs-container {
         text-align: center;

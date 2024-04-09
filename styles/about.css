@@ -681,6 +681,7 @@ body.dark-mode .cs-button-solid:before {
         padding: clamp(10.9375rem, 10vw, 12.5rem) 1rem 6.25rem;
         position: relative;
         z-index: 1;
+        background-color: #ff4057;
     }
     #ContactBanner-721 .cs-container {
         text-align: center;
@@ -904,6 +905,7 @@ body.dark-mode .cs-button-solid:before {
         /* 16px - 20px */
         gap: clamp(1rem, 2.6vw, 1.25rem);
         position: relative;
+    
     }
     #content-page-1401 .cs-flex {
         position: relative;
@@ -1110,6 +1112,11 @@ body.dark-mode .cs-button-solid:before {
         display: flex;
         /* sends it to the right in the 2nd position */
         order: 2;
+        
+        
+    }
+    .cs-image-group > img {
+        border-radius: 1rem;
     }
 }
 /* Desktop - 1200px */
