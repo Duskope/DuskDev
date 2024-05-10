@@ -15,6 +15,7 @@
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
 }
 
 body {
@@ -640,7 +641,7 @@ html {
       overflow: hidden;
       position: relative;
       z-index: 1;
-      height: 90vh;
+      min-height: 90vh;
     }
     #hero-1427 .cs-background {
       width: 100%;
