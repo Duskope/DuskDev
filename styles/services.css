@@ -1012,7 +1012,8 @@ body.dark-mode .cs-button-solid:before {
     #RTsbs-1311 .cs-box,
     #RTsbsr-1311 .cs-box,
     #RTsbst-1311 .cs-box {
-        bottom: 0rem;
+        bottom: 1rem;
+        border-radius: 1rem;
     }
     #RTsbs-1311 .cs-graphic,
     #RTsbsr-1311 .cs-graphic,
@@ -1022,11 +1023,13 @@ body.dark-mode .cs-button-solid:before {
         right: 8.125rem;
         transform: translateY(-50%);
     }
+    #RTsbst-1311 .cs-picture {
+        height: 60%;
+    }
+    #RTsbst-1311 .cs-box {
+        bottom: 18rem;
+    }
 }
-#RTsbst-1311 .cs-picture {
-    height: 60%;
-}
-
 /*-- -------------------------- -->
 <---   Side By Side Reverse     -->
 <--- -------------------------- -*/
