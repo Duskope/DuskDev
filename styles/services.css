@@ -1066,6 +1066,9 @@ body.dark-mode .cs-button-solid:before {
         object-fit: cover;
         border-radius: 1rem;
     }
+    #RTsbst-1311 .cs-box {
+        bottom: 1rem;
+    }
     
 }
 /* Desktop - 1024px */
